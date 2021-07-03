@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Title</title>
+</head>
+
+<body id="index">
+    <header class="header"></header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 bg  d-none d-sm-none  d-md-none d-lg-block">
+                <aside class="sidebar mt-5"></aside>
+            </div>
+            <div class="col-12 col-md-10 ">
+                <main class="m-4">
+                    <div class="d-flex flex-wrap justify-content-center justify-content-lg-between">
+                        <div class="border data_box p-2 rounded-3 text my-4">
+                            <div class="d-flex justify-content-between ">
+                                <h5>Total Expense</h5>
+                                <p><i class="fas fa-rupee-sign"></i> 10000</p>
+                            </div>
+                            <hr class="m-2">
+                            <div class="d-flex justify-content-between ">
+                                <div class="text-center">
+                                    <canvas class="loader1"></canvas>
+                                    <p class="data_box_text fw-bolder">26 Drafts</p>
+                                </div>
+                                <div class="text-center">
+                                    <canvas class="loader2"></canvas>
+                                    <p class="data_box_text fw-bolder">19 Submited</p>
+                                </div>
+                                <div class="text-center">
+                                    <canvas class="loader3"></canvas>
+                                    <p class="data_box_text fw-bolder">12 Approved</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                
+                        <div class="border data_box p-2 rounded-3 text my-4">
+                            <div class="d-flex justify-content-between ">
+                                <h5>Other Expense</h5>
+                                <p><i class="fas fa-rupee-sign"></i> 10000</p>
+                            </div>
+                            <hr class="m-2">
+                            <div class="d-flex justify-content-between ">
+                                <div class="text-center">
+                                    <canvas class="loader4"></canvas>
+                                    <p class="data_box_text fw-bolder">26 Drafts</p>
+                                </div>
+                                <div class="text-center">
+                                    <canvas class="loader5"></canvas>
+                                    <p class="data_box_text fw-bolder">19 Submited</p>
+                                </div>
+                                <div class="text-center">
+                                    <canvas class="loader6"></canvas>
+                                    <p class="data_box_text fw-bolder">12 Approved</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="border data_box p-2 rounded-3 text my-4">
+                            <div class="d-flex justify-content-between ">
+                                <h5>Local Conveyance</h5>
+                                <p><i class="fas fa-rupee-sign"></i> 10000</p>
+                            </div>
+                            <hr class="m-2">
+                            <div class="d-flex justify-content-between ">
+                                <div class="text-center">
+                                    <canvas class="loader7"></canvas>
+                                    <p class="data_box_text fw-bolder">26 Drafts</p>
+                                </div>
+                                <div class="text-center">
+                                    <canvas class="loader8"></canvas>
+                                    <p class="data_box_text fw-bolder">19 Submited</p>
+                                </div>
+                                <div class="text-center">
+                                    <canvas class="loader9"></canvas>
+                                    <p class="data_box_text fw-bolder">12 Approved</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-center justify-content-lg-between mt-5 ">
+                        <div class="border border-dark rounded-3 me-3 data_box2">
+                            <div class="d-flex justify-content-between mx-2 mt-2 ">
+                                <h5>Claim Analysis</h5>
+                                <i class="fas fa-exclamation-circle  mt-2  "></i>
+                            </div>
+                            <hr>
+                       <div class="d-flex justify-content-around flex-wraps">
+                        <div id="element1" class="element position-relative">
+                            <p class="position-absolute">Total Claims</p>
+                        </div>
+                
+                        <div class="ms-5 data d-flex flex-column justify-content-evenly">
+                            <div>
+                                <span class="box_color_1 d-inline-block data_color_box"></span>
+                                <span>Requested by EMP as Draft</span>
+                            </div>
+                            <div>
+                                <span class="box_color_2 d-inline-block data_color_box"></span>
+                                <span>Submitted by EMP</span>
+                            </div>
+                            <div>
+                                <span class="box_color_3 d-inline-block data_color_box"></span>
+                                <span>Approval in Progress</span>
+                            </div>
+                            <div>
+                                <span class="box_color_4 d-inline-block data_color_box"></span>
+                                <span>Approval Completed</span>
+                            </div>
+                            
+                        </div>
+                       </div>
+                        </div>
+                        <div class="border border-dark rounded-3  mt-md-0 mt-sm-3 mt-3 data_box2">
+                            <div class="calender">
+                                <h3 class="m-auto">No Items</h3>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  
+    <script src="js/jquery.classyloader.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/jquery.jchart.js" type="text/javascript"></script>
+
+    <script>
+      let jchart1;
+    $(function () {
+        jchart1 = $("#element1").jChart({
+            data: [
+                
+                {
+                    value: 1500,
+                    color: {
+                        normal: '#eb4a8a',
+                        active: '#b0ff9f',
+                    },
+                    draw: true, //false
+                    push: true, //false
+                },
+                {
+                    value: 755,
+                    color: {
+                        normal: '#dd5723',
+                        active: '#fa6025',
+                    },
+                    order: 1
+                },
+                {
+                    value: 330,
+                    color: {
+                        normal: '#5289c9',
+                        active: '#8ffff2',
+                    }
+                },
+                {
+                    value: 230,
+                    color: {
+                        normal: '#ddff28',
+                        active: '#ddff50',
+                    }
+                }
+            ],
+            appearance: {
+                type: 'donut',
+                subType: 'path',
+                baseColor: '#ddd',
+                radius: 125 / (2 * Math.PI),
+                gap: 1,
+                baseStrokeWidth: 0.5,
+                // animated: false
+
+                title: {
+                    showSummary: true,
+                    summaryTitle:'323',
+                    summarySegment: 2
+                }
+            },
+            callbacks: {
+                onSegmentMouseover: function (did, segment) {
+                    // console.log(did);
+                    // console.log(segment);
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+
+</html>

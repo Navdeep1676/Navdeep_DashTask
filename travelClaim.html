@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Title</title>
+</head>
+
+<body id="travel_claim">
+  <header class="header"></header>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-2 bg d-none d-sm-none  d-md-none d-lg-block">
+        <aside class="sidebar mt-5"></aside>
+      </div>
+      <div class="col-12 col-md-10 ">
+        <div class="main_travelclaim p-3">
+          <div class="travel_claim_header d-flex justify-content-between">
+            <h3 class="fw-bold">Travel Claim</h3>
+            <div>
+              <div class="dropdown d-inline-block me-2">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-filter    "></i>
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown d-inline-block me-4">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-align-left    "></i>
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-danger  "><i class="fas fa-plus me-2"></i>Add New Claim</a>
+
+
+            </div>
+
+          </div>
+          <hr>
+          <div class="d-flex justift-content-start">
+            <div class="dropdown me-2">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Type Of Travel
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+            <div class="dropdown me-2">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                TRIF No.
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Status
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+          <p class="my-2">Showing 1-10 of 23 results</p>
+          <table class="table table-danger mb-4" id="table_data">
+            <thead>
+              <tr class="table-dark">
+                <th class="fw-light" scope="col">S.No</th>
+                <th class="fw-light" scope="col">Purpose</th>
+                <th class="fw-light" scope="col">Type of Travel</th>
+                <th class="fw-light" scope="col">Amount</th>
+                <th class="fw-light" scope="col">TRIF No.</th>
+                <th class="fw-light" scope="col">Route</th>
+                <th class="fw-light" scope="col">Request On</th>
+                <th class="fw-light" scope="col">Status</th>
+                <th class="fw-light" scope="col">Action</th>
+              </tr>
+              <tr>
+                <th colspan="2"></th>
+                <th scope="col">
+                  <div class="form-group  d-inline-block">
+                    <select class="form-control" name="" id="">
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                    </select>
+                  </div>
+                </th>
+                <th colspan="1"></th>
+                <th scope="col">
+                  <div class="form-group  d-inline-block">
+                    <select class="form-control" name="" id="">
+                      <option> Option 1</option>
+                      <option> Option 2</option>
+                      <option> Option 3</option>
+                    </select>
+                  </div>
+                </th>
+                <th colspan="2"></th>
+                <th scope="col">
+                  <div class="form-group  d-inline-block">
+                    <select class="form-control" name="" id="">
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                    </select>
+                  </div>
+                </th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody class="tablebody">
+              <tr class="table-danger">
+                
+              </tr>
+              
+            </tbody>
+          </table>
+          <nav aria-label="Page navigation example my-4">
+            <ul class="pagination">
+              <li class="page-item"><a class="text-danger border-danger page-link" href="#"><i
+                    class="fas fa-angle-left    "></i></a></li>
+              <li class="page-item"><a class="text-danger border-danger page-link" href="#">1</a></li>
+              <li class="page-item"><a class="text-danger border-danger page-link" href="#">2</a></li>
+              <li class="page-item"><a class="text-danger border-danger page-link" href="#">3</a></li>
+              <li class="page-item"><a class="text-danger border-danger page-link" href="#"><i
+                    class="fas fa-angle-right    "></i></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"></script>
+  <script src="./js/main.js"></script>
+
+
+
+</body>
+
+</html>
